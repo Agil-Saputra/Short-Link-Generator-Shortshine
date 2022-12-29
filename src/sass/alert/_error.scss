@@ -1,0 +1,25 @@
+.error{
+    display: none;
+    border: 2px solid $Red;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0.4rem 0.4rem 0 2px $Red;
+    width: 30%;
+    background: #fff;
+}
+.error-text{
+    display: none;
+    text-align: start;
+    bottom: 0;
+    border-radius: 5px;
+    margin: 1rem 1rem 0 0;
+    background: #fff;
+    color: $Red;
+}
+
+@media (max-width: 768px) {
+    .error{
+        font-size: 10px;
+    }
+}

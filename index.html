@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShortShine</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo"><span>Short</span>Shine.</h1>
+      <ul class="nav-menu">
+        <li><a href="#feature-card">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="https://shrtco.de/docs" target="_blank">Resources</a></li>
+      </ul>
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="url-input hidden">
+        <h1><span>More Short</span> More Shine</h1>
+        <p>Boost your links today!</p>
+        <form id="form">
+          <input type="url" placeholder="Shorten a link here..." id="url" />
+          <div class="error-text"></div>
+        <button type="submit" class="btn-submit">
+          Shorten It!
+        </button>
+        </form>
+
+        <div class="loader"></div>
+        <div class="error"></div>
+        <div id="container">
+        </div> 
+      </div>
+    </main>
+    
+    <section class="hero">
+      <img src="public/images/hero.svg" alt="" class="hidden"/>
+      <div>
+        <h1 class="title">More than just shorter links</h1>
+        <p class="paraf">
+          Build your brand’s recognition and get detailed insights<br />
+          on how your links are performing.
+        </p>
+      </div>
+    </section>
+
+    <section class="feature" id="feature-card">
+      <div class="card hidden">
+        <h1>Advanced Statistics</h1>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="card hidden">
+        <h2>Brand Recognition</h2>
+        <p>
+          Boost your brand recognition with each click. Generic links don’t mean
+          a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+      <div class="card hidden">
+        <h2>Detailed Records</h2>
+        <p>
+          Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.
+        </p>
+      </div>
+      <div class="card hidden">
+        <h2>Fully Customizable</h2>
+        <p>
+          Improve brand awareness and content discoverability through
+          customizable links, supercharging audience engagement.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h3>Features</h3>
+        <ul>
+          <li><a>Shortening</a></li>
+          <li><a>Branded Links</a></li>
+          <li><a>Analytics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a>Blog</a></li>
+          <li><a>Developers</a></li>
+          <li><a>Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a>About</a></li>
+          <li><a>Our Team</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="icon">
+        <img src="public/images/icon-facebook.svg" alt="" />
+        <img src="public/images/icon-twitter.svg" alt="" />
+        <img src="public/images/icon-pinterest.svg" alt="" />
+        <img src="public/images/icon-instagram.svg" alt="" />
+        <h1 class="logo logo--footer"><span>Short</span>Shine.</h1>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

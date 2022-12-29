@@ -1,0 +1,68 @@
+.logo {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 2rem;
+    span {
+      color: $Blue;
+    }
+}
+
+nav {
+  z-index: 99;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.285);
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  animation: fade 1s linear;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    // height: 100%;
+    width: 50%;
+    text-align: left;
+    padding: 5rem 3rem;
+    transition: all 0.2s ease-in-out;
+    z-index: 98;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10000%;
+    flex-direction: column;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background-color: #fff;
+    padding: 5rem 3rem;
+    z-index: 98;
+  }
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}

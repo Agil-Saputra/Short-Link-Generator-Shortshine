@@ -1,0 +1,24 @@
+// utilities 
+@import 'abstract/variables';
+@import 'abstract/reset';
+// nav element
+@import 'navbar/nav';
+@import 'navbar/burger';
+// main element
+@import 'main/main';
+@import 'input/url';
+@import 'button/btn';
+// detail page element
+@import 'main/hero';  
+// card feature element
+@import 'card/card';
+// footer element
+@import 'footer/footer';
+// animation
+@import 'pageAnimation/page';
+// the result links
+@import 'result/child';
+// error and copy alerts
+@import 'alert/error';
+// spinner lement 
+@import 'loader/spinner';

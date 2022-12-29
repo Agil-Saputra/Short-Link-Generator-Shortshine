@@ -1,0 +1,44 @@
+footer {
+  background-color: $Blue;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  padding: 2rem 0;
+  div {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+  }
+}
+
+.icon{
+    img{
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    img:hover{
+        scale: 115%;
+    }
+}
+
+.logo--footer{
+    background-color: #fff;
+    border: #333;
+    border-radius: 5px;
+    box-shadow: 0.4rem 0.4rem 0 2px #333;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+

@@ -1,0 +1,35 @@
+.menu {
+    width: 24px;
+    flex-direction: column;
+    gap: 5px;
+    display: flex;
+    z-index: 99;
+    span{
+        background-color: #333;
+        height: 3px;
+        transition: all 0.2s ease-in-out;
+        border-radius: 5px;
+    }
+}
+
+.menu.close {
+    span:nth-child(1){
+        transform: rotate(-45deg);
+        transform-origin: top right;
+    }
+
+    span:nth-child(2){
+        transform: scale(0);
+    }
+
+    span:nth-child(3){
+        transform: rotate(45deg);
+        transform-origin: bottom right;
+    }
+}
+
+@media (min-width:769px) {
+    .menu {
+        display: none;
+    }
+}

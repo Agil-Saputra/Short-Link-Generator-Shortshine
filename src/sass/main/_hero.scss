@@ -1,0 +1,25 @@
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem;
+    img{
+        width: 60%;
+       transition-delay: 500ms;
+    }
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.paraf {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+}
