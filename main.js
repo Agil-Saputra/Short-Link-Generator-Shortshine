@@ -27,12 +27,12 @@ const input = document.querySelector("#url");
 const container = document.querySelector("#container");
 
 // fetch API for Shorting The input URl Using Asynchronous function
-async function short() {
+ async function short() {
   const data = await fetch(
     `https://api.shrtco.de/v2/shorten?url=${input.value}`
   );
   const res = await data.json();
-
+// create a output and append it to the container
   if (res.ok == true) {
     let div = document.createElement("div");
     div.classList.add("child");
@@ -45,6 +45,7 @@ async function short() {
     `;
     container.appendChild(div);
   } else {
+    // handling error from API
     const err = document.querySelector(".error");
     err.style.display = "block";
     err.innerHTML = `
@@ -71,7 +72,7 @@ const loader = document.querySelector(".loader");
 const child = document.querySelector(".child");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+// handling submit error
   if (!input.value) {
     const errtext = document.querySelector(".error-text");
     errtext.innerHTML = `Please Enter a your valid input!`;
@@ -86,5 +87,6 @@ form.addEventListener("submit", (e) => {
       loader.style.display = "none";
     }, 1500);
   }
+  // clean the input
   input.value = " ";
 });
