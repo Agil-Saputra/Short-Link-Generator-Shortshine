@@ -61,10 +61,11 @@ nav {
     padding: 5rem 3rem;
     z-index: 98;
   }
+  .flex{
+    gap: 0.7rem;
+  }
 }
-.flex{
-  gap: 0.7rem;
-}
+
 
 @keyframes fade {
   0%{
