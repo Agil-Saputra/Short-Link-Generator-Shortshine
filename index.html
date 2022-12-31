@@ -10,16 +10,20 @@
   <body>
     <nav>
       <h1 class="logo"><span>Short</span>Shine.</h1>
-      <ul class="nav-menu">
-        <li><a href="#feature-card">Features</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="https://shrtco.de/docs" target="_blank">Resources</a></li>
-        <li><button id="toggleMode"><img id="img" src="public/images/dark.svg" alt="">Dark Mode</button></li>
-      </ul>
-      <div class="menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="flex">
+        <ul class="nav-menu">
+          <li><a href="#feature-card">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="https://shrtco.de/docs" target="_blank">Resources</a></li>         
+        </ul>
+        <button id="toggleMode" value="Dark Mode">
+          <img id="img" src="public/images/dark.svg" alt="" />
+        </button>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
 
@@ -30,20 +34,17 @@
         <form id="form">
           <input type="url" placeholder="Shorten a link here..." id="url" />
           <div class="error-text"></div>
-        <button type="submit" class="btn-submit">
-          Shorten It!
-        </button>
+          <button type="submit" class="btn-submit">Shorten It!</button>
         </form>
 
         <div class="loader"></div>
         <div class="error"></div>
-        <div id="container">
-        </div> 
+        <div id="container"></div>
       </div>
     </main>
-    
+
     <section class="hero">
-      <img src="public/images/hero.svg" alt="" class="hidden"/>
+      <img src="public/images/hero.svg" alt="" class="hidden" />
       <div>
         <h1 class="title">More than just shorter links</h1>
         <p class="paraf">

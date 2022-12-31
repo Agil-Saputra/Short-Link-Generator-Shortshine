@@ -11,7 +11,7 @@
 nav {
   z-index: 99;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.285);
+  background-color: rgba(255, 255, 255, 0);
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -56,6 +56,11 @@ nav {
     padding: 5rem 3rem;
     z-index: 98;
   }
+}
+
+.flex{
+  display: flex;
+  gap: 3rem;
 }
 
 @keyframes fade {

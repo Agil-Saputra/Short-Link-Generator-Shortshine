@@ -95,6 +95,7 @@ form.addEventListener("submit", (e) => {
 const mode = document.querySelector('body')
 const btn  = document.querySelector('#toggleMode');
 const img = document.querySelector('img');
+
 let toggle = true
 
 btn.addEventListener('click', () =>{
@@ -105,6 +106,5 @@ btn.addEventListener('click', () =>{
   } else {
     img.src = 'public/images/dark.svg';
   }
-  
-  
+
 })
