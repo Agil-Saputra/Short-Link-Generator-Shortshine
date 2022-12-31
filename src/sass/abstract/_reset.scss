@@ -5,6 +5,9 @@ html {
     box-sizing: border-box;
 }
 
+body{
+    transition: all 0.2s ease-in-out;
+}
 *,
 *::before,
 *::after{

@@ -90,3 +90,21 @@ form.addEventListener("submit", (e) => {
   // clean the input
   input.value = " ";
 });
+
+// dark mode toggle 
+const mode = document.querySelector('body')
+const btn  = document.querySelector('#toggleMode');
+const img = document.querySelector('img');
+let toggle = true
+
+btn.addEventListener('click', () =>{
+  toggle = !toggle;
+  mode.classList.toggle('dark');
+  if(!toggle){
+    img.src = 'public/images/light.svg';
+  } else {
+    img.src = 'public/images/dark.svg';
+  }
+  
+  
+})

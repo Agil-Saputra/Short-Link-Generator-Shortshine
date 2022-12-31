@@ -1,0 +1,12 @@
+.dark{
+    color: $White;
+    background-color: $Dark;
+}
+
+#toggleMode {
+    font-weight: 400;
+    display: flex; 
+    font-size: 0.7rem;
+    flex-direction: column;
+    align-items: center;
+}
